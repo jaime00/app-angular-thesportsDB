@@ -1,0 +1,60 @@
+<div class="view">
+    <div *ngFor="let data of team">
+        <div class="container header">
+            <div class="pt-5 text-center">
+                <div>
+                    <div class="row">
+                        <div class="col" style="height:  250px">
+                            <img src="{{data.strTeamBadge}}" class="d-block w-40 mx-auto h-75" alt="...">
+                        </div>
+
+                        <div class="col" style="height:  250px">
+                            <img src="{{ data.strTeamJersey }}" class="d-block w-40 mx-auto h-75" alt="...">
+                        </div>
+                    </div>
+
+                    <!-- <img src="{{data.strTeamJersey}}" class="d-block w-40 mx-auto h-75" alt="..."> -->
+                    <!-- <img src="{{data.strTeamLogo}}" class="d-block w-40 mx-auto h-75" alt="..."> -->
+                </div>
+            </div>
+        </div>
+        <div class="container description mb-5">
+            <div class="text-center">
+                <h2 class="title">{{ data.strTeam }}</h2>
+                <span class="badge badge-dark mb-3">{{data.intFormedYear}}</span>
+            </div>
+            <p>
+                {{ data.strDescriptionEN }}
+            </p>
+            <div class="my-5">
+                <img src="{{data.strStadiumThumb}}" alt="" class="rounded w-100 shadow-lg bg-white rounded">
+            </div>
+            <div>
+                <h2 class="title">{{data.strStadium}}</h2>
+                <p class="text-justify">{{data.strStadiumDescription}}</p>
+            </div>
+        </div>
+        <div class="mt-3 socialNetworks container">
+            <div class="row">
+                <div class="col">
+                    <a href="https://{{data.strWebsite}}" target="_blank" rel="noopener noreferrer">WebSite</a>
+                </div>
+                <div class="col">
+                    <a href="https://{{data.strFacebook}}" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </div>
+                <div class="col">
+                    <a href="https://{{data.strTwitter}}" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </div>
+                <div class="col">
+                    <a href="https://{{data.strInstagram}}" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="players text-center py-4">
+            <h2>Squad</h2>
+            <players-component>
+            </players-component>
+        </div>
+    </div>
+
+</div>

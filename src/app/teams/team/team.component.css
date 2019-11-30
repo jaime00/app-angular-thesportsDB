@@ -1,0 +1,22 @@
+.card-header {
+    background-color: #121212;
+}
+.card-body {
+    color: whitesmoke;
+}
+
+.card {
+    background-color: #282828;
+    margin-top: 40px;
+}
+
+.card:hover {
+    border-bottom: 1px solid greenyellow;
+}
+
+.team {
+    background-color: #282828;
+    color: #A6A6A6;
+    width: 350px;
+}
+

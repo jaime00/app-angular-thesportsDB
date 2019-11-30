@@ -1,0 +1,13 @@
+<a [routerLink]="['/teams/view', team.idTeam ]">
+    <div class="card">
+        <div class="card-header">
+            <img src="{{team.strTeamBadge}}" class="card-img-top" alt="{{team.strTeam}}" title="{{team.strTeam}}">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title text-white">{{team.strTeam}}</h5>
+            <span class="badge badge-dark">{{team.intFormedYear}}</span>
+        </div>
+        <div class="card-footer">
+        </div>
+    </div>
+</a>

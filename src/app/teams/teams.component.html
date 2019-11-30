@@ -1,0 +1,9 @@
+<div class="">
+    <div class="card-deck">
+        <div class="row text-center">
+            <div *ngFor="let team of allTeams | async" class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <team-component [team] = "team"></team-component>
+            </div>
+        </div>
+    </div>
+</div>
